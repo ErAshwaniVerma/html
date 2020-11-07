@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Test</title>
+    <link rel="stylesheet" href="style.css">
     <style type="text/css" media="all">
        body{
           background: #333;
           color:#fff;
           font-family: Arial, Helvetica, sans-serif;
        }
-       button{
-          padding:10px;
-          border:0px;
-          background: dodgerblue;
-          color:#fff;
-          border-radius:5px;
-       }
        a{
           color:#fff;
        }
+       @keyframes ashu{
+         0%{transform:rotate(0deg)}
+         100%{transform:rotate(360deg)}
+       }
+       .box{
+          animation:ashu 2s linear infinite;
+          width:100px;
+          height:100px;
+          background:dodgerblue;
+       }
     </style>
 </head>
-
 <body>
-   <a href="about.html">About</a>
-   <button onclick="alert('hello')">Click me</button>
-   
+   <a href="about.html">About</a><br><br>
+   <div class="box"></div>
 </body>
-
 </html>
